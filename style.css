@@ -1,0 +1,85 @@
+/* this part of the css will be the defualt for the three pages,  */
+body {
+  background-color: #4abdac;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-left: 10em;
+  padding-right: 10em;
+}
+/* here is where i was able to update the color style and locaiton of the NAV bar and its text */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  display: block;
+  color: #4abdac;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* here is where i start to create specific styles depending ont he element, id or class */
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 3em;
+}
+
+/*  */
+div .main {
+  padding: 10em;
+}
+/* I created a specific parameters for the pictures, so that they all displayed the same height and width, 
+I also made sure that the image covered the dimension so that i woudl not get warped */
+.pictures {
+  font-size: 0.7em;
+  display: inline-block;
+}
+.pictures img {
+  height: 400px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 5%;
+}
+
+/* footer created to stand out from the rest */
+#prompt {
+  background-color: #fff;
+  color: #4abdac;
+  height: 3em;
+  padding: 2em;
+  text-align: center;
+}
+#prompt a {
+  color: #4abdac;
+}
+/* Table, had to main items that I wanted to adjust.  */
+.ranking h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+#table {
+  background-color: #f7b733;
+  color: #fff;
+  height: 3em;
+  padding: 2em;
+  text-align: left;
+}
+/* form has simple color changes to make it better stand out */
+.question h2 {
+  font-family: "Courier New", Courier, monospace;
+}
+#form {
+  background-color: #f7b733;
+  color: #fff;
+  height: 5em;
+  padding: 2em;
+  text-align: left;
+}
