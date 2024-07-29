@@ -1,12 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scenic Travels</title>
+
+    <!-- Below is where I had to add my bootstrap style sheet -->
+
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.css"
+    />
+
+
+  </head>
+  <!-- I placed all my Elements in the container, so that I could control how they 
+   react when the viewport size changes. This insured tha the elements stacked vertically 
+   when the window was small  -->
+
+  <body>
+    <div class="container-fluid">
+
+<!-- Here is where i added code to improve my nav bar. I keeps its appearance when small. 
+ However, I was not able to figure out to collapse the menue to create a functional dropdwon menure. -->
+
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="index.html">
+          <img
+            src="/images/droplet-half.svg"
+            width="30"
+            height="30"
+            class="d-inline-block align-top"
+            alt=""
+          />
+        </a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="more info.html">More Info</a>
+          </li>
+        </ul>
+      </nav>
+
+<!-- Here I added some text and modified it using the proper css from bootstrap -->
+
+      <div class=" ">
+        <h2 class="text-center pt-5">Breathtaking Water Marvels</h2>
+        <p class="text-center pb-5">
+          Below are five of the world's most awe-inspiring natural water
+          attractions, each offering a unique and unforgettable experience.
+          Visiting these destinations allows you to witness nature's spectacular
+          artistry and immerse yourself in some of the planet's most stunning
+          landscapes.
+        </p>
+      </div>
+
+<!-- This is where I added a table to display the top ranked water marvels around the world. 
+ I was able to change the header color to a primary and changed the text to white -->
+
+      <div class="row align-items-start">
+        <div class="col">
+          <table class="table">
+            <thead class="bg-primary text-white">
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Location</th>
+                <th scope="col">Best Time to Visit</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Niagara Falls</td>
+                <td>USA/Canada:</td>
+                <td>May to October</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Great Barrier Reef</td>
+                <td>Australia</td>
+                <td>June to November</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Victoria Falls</td>
+                <td>Zambia/Zimbabwe</td>
+                <td>June to October</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Blue Hole</td>
+                <td>Belize</td>
+                <td>March to June</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Iguazu Falls</td>
+                <td>Argentina/Brazil</td>
+                <td>March to May or September to November</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+<!-- Here I added a fomr, to ask the user for their input on these locations. The form asks for a name
+ email and a short paragraph about their travel experience  -->
+
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <h4 class="text-center pt-5">Have You Visited?</h4>
+            <p>
+              If you've visited any of the places listed below, I'd love to hear
+              about your experience and any tips you might have. Feel free to
+              share, and I'll add your insights to the "More Info' page for
+              future travelers
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container pt-5">
+        <div class="row align-items-center">
+          <div class="col">
+            <form>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Full Name</label>
+                <input class="form-control" id="exampleFormControlInput1" />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlInput1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleFormControlInput1"
+                />
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1"
+                  >Your Travel Experience</label
+                >
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- a simple footer to keep track of my assignment week -->
+    <footer
+      class="text-center font-weight-light text-primary text-uppercase font-italic p-5"
+    >
+      Week 3 Assignment
+    </footer>
+  </body>
 </html>
